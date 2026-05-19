@@ -1,0 +1,88 @@
+body {
+  background-image: url('/assets/norrkoeping.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #473529;
+}
+
+body.no-bg {
+  background-image: none;
+  background-color: white;
+}
+
+main {
+  color: white;
+  text-shadow: -2px 1px 6px rgba(0, 0, 32, 1.0);
+  font-size: 1.125rem;
+}
+
+.content-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+
+h2, h3, h4 {
+  margin-top: 1.8rem;
+}
+
+img {
+  width: 100%;
+}
+
+header.hero {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .nav {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+header .nav-item {
+  flex: none;
+}
+
+header .nav-link {
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.55);
+  padding-left: 0;
+}
+
+header .nav-link:hover,
+header .nav-link:focus {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
+}
+
+.nav-link.active-link {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (max-width: 992px) {
+
+  header .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.1rem;
+  }
+
+  header .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  header .nav-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+  header .nav-item:nth-child(3) { grid-column: 2; grid-row: 1; }
+  header .nav-item:nth-child(4) { grid-column: 3; grid-row: 1; }
+
+  header .nav-item:nth-child(2) { grid-column: 1; grid-row: 2; }
+  header .nav-item:nth-child(5) { grid-column: 2; grid-row: 2; }
+
+}
