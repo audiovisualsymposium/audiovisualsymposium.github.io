@@ -97,3 +97,21 @@ a.no-link-decor:hover,
 a.no-link-decor:focus {
   color: rgba(0, 0, 0, 0.7);
 }
+
+.prog-link,
+.prog-link:link,
+.prog-link:visited {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.prog-link:hover,
+.prog-link:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.prog-link:active {
+    color: #ffffff;
+    text-decoration: underline;
+}
